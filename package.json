@@ -1,0 +1,21 @@
+{
+  "name": "multiplayer-online-game-boilerplate",
+  "version": "1.0.0",
+  "description": "multiplayer-online-game-boilerplate ===================================",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm-run-parallel start:gameserver start:webserver",
+    "start:gameserver": "node server.js",
+    "start:webserver": "http-server -p $PORT"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io": "^2.0.3"
+  },
+  "devDependencies": {
+    "http-server": "^0.10.0",
+    "npm-run-parallel": "^0.6.0"
+  }
+}
